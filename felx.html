@@ -6,12 +6,52 @@
     <title>Flexbox</title>
 
     <style>
+        .container{
+               display: flex;
+               gap: 15px;
+        }
 
+    .box{
+        background-color: chartreuse;
+        padding: 15px;
+        border-radius: 15px;
+    }
+    
+    .container-2{
+        display: flex;
+        background-color: blue;
+         
+    }
+
+    .item{
+        width: 100px;
+        height: 50px;
+        border: 1px solid purple;
+        gap: 5px;
+    }
+
+    @media screen and (max-width:576px) {
+        .container, .container-2{
+           flex-direction: column;
+        }
+    }
     </style>
 </head>
 <body>
     <H3>Flexseble felx</H3>
     <div class="container">
+        <div class="box">
+            <h4>flex box</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deleniti voluptatum id, libero ad magnam. Corrupti maiores optio neque aut, accusantium id tempore dolor? Unde perferendis nihil nostrum modi inventore quisquam. Facilis reprehenderit ipsam, id nulla eveniet minus aperiam laborum porro alias recusandae quo aliquid optio. Ipsa eaque sunt corrupti asperiores accusantium nesciunt impedit cupiditate! Aperiam quod magni sed molestiae?</p>
+        </div>
+
+        <div class="box">
+            <h4>flex box</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deleniti voluptatum id, libero ad magnam. Corrupti maiores optio neque aut, accusantium id tempore dolor? Unde perferendis nihil nostrum modi inventore quisquam. Facilis reprehenderit ipsam, id nulla eveniet minus aperiam laborum porro alias recusandae quo aliquid optio. Ipsa eaque sunt corrupti asperiores accusantium nesciunt impedit cupiditate! Aperiam quod magni sed molestiae?</p>
+        </div>
+    </div>
+
+    <div class="container-2">
         <div class="item">item - 1</div>
         <div class="item">item - 2</div>
         <div class="item">item - 3</div>
